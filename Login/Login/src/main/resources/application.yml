@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://dpg-ct93jie8ii6s73fpqmg0-a.ohio-postgres.render.com:5432/login_yo10
+    username: pototski
+    password: lQUJFiBMylpYjOd3lepROJWJ2kRkpBfF
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update        # Atualiza automaticamente o esquema da tabela, se necessário
+    show-sql: true            # Exibe as queries SQL no console
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 8081                 # Porta do microservice de login
